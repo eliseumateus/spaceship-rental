@@ -1,6 +1,6 @@
 <div class="container my-2 px-1">
 <% if user_signed_in? && current_user.admin %>
-  <%= link_to "Add a Spaceship", new_spaceship_path, class: "btn btn-success p-1 m-2" %>
+  <%= link_to "Add a Spaceship", new_spaceship_path, class: "btn btn-info my-3 mx-3" %>
 <% end %>
 
 <% if !user_signed_in? || (user_signed_in? && !current_user.admin) %>
@@ -37,7 +37,8 @@
       </div>
     <% end %>
   </div>
+  <%= link_to "Back", root_path, class: 'btn btn-info my-3 mx-3' %>
 </div>
-<%= link_to "Back", root_path, class: 'btn btn-info my-3 mx-3' %>
+
 
 

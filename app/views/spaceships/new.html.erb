@@ -8,8 +8,7 @@
         <%= f.input :description %>
         <%= f.input :price, as: :string %>
         <%= f.input :destination %>
-        <%= f.input :hotdeal %>
-        <%= f.input :photo, as: :file %>
+        <%= f.input :hotdeal, as: :radio_buttons, collection: [['Hot deal', 'true'], ['Regular offer', 'false']], label_method: :first, value_method: :second %>        <%= f.input :photo, as: :file %>
         <%= f.button :submit, class: 'btn btn-dark' %>
       <% end %>
       <%= link_to "Back", spaceships_path, class: 'btn btn-info my-2' %></div>

@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
   def home
     # @spaceships = Spaceship.where(hotdeal: true) # need to create a new column in Spaceships
-    @spaceships = Spaceship.where('price > 89000')
+    @spaceships = Spaceship.where(hotdeal: true)
   end
 
   def my_bookings

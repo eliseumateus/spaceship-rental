@@ -18,7 +18,11 @@
         <div class="card-trip-infos">
           <div>
             <h2> <%= spaceship.name %> </h2>
-            <p> Great deal! </p>
+            <% if spaceship.hotdeal%>
+              <h6 class="hotdeal-red"> <strong>Hotdeal!</strong> </h6>
+            <% else %>
+              <h6 class="hotdeal-none"> - </h6>
+            <% end %>
           </div>
           <p class="card-trip-pricing"> SC <%= spaceship.price %> </p>
           <%= image_tag("earth.png", class: "card-trip-user avatar-destination") %>

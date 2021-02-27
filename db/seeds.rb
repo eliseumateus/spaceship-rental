@@ -120,13 +120,13 @@ Time of stay: 8 dias
 Type of travel: conventional speed: 12%, warp speed: 88%" 
 
 
-spaceship1 = Spaceship.create(name: "Moon Light", destination: "moon", description: moon, price: 8000, user_id:user_admin.id )
-spaceship2 = Spaceship.create(name: "MarsX the red planet", destination: "mars", description: mars, price: 70000, user_id:user_admin.id )
-spaceship3 = Spaceship.create(name: "The smallest sun", destination: "mercury", description: mercury, price: 85000, user_id:user_admin.id )
-Spaceship.create(name: "Lover", destination: "venus", description: venus, price: 50000, user_id:user_admin.id )
-Spaceship.create(name: "The ring", destination: "saturn", description: saturn, price: 90000, user_id:user_admin.id )
-Spaceship.create(name: "Far out", destination: "neptune", description: neptune, price: 100000, user_id:user_admin.id )
-Spaceship.create(name: "The 7th planet", destination: "uranus", description: uranus, price: 200000, user_id:user_admin.id )
+spaceship1 = Spaceship.create(name: "Moon Light", destination: "moon", hotdeal: false, description: moon, price: 8000, user_id:user_admin.id )
+spaceship2 = Spaceship.create(name: "MarsX the red planet", hotdeal: true, destination: "mars", description: mars, price: 70000, user_id:user_admin.id )
+spaceship3 = Spaceship.create(name: "The smallest sun", hotdeal: false, destination: "mercury", description: mercury, price: 85000, user_id:user_admin.id )
+Spaceship.create(name: "Lover", destination: "venus", hotdeal: true, description: venus, price: 50000, user_id:user_admin.id )
+Spaceship.create(name: "The ring", destination: "saturn", hotdeal: false, description: saturn, price: 90000, user_id:user_admin.id )
+Spaceship.create(name: "Far out", destination: "neptune", hotdeal: true, description: neptune, price: 100000, user_id:user_admin.id )
+Spaceship.create(name: "The 7th planet", destination: "uranus", hotdeal: false, description: uranus, price: 200000, user_id:user_admin.id )
 
 Booking.create(user_id: user_gaia.id, spaceship_id: spaceship1.id ,start_date: "Thu, 25 Feb 2021",
   end_date: "Thu, 25 Feb 2021" )

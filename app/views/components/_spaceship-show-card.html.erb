@@ -4,6 +4,9 @@
     <div>
       <h2>Spaceship: <%=@spaceship.name%></h2>
       <h2>Destination: <%=@spaceship.destination.capitalize%></h2>
+      <% if @spaceship.hotdeal %>
+        <h2 class="hotdeal-red"><strong>Hotdeal!</strong></h2>
+      <%end%>
       <p style="font-size: 14px"><%=@spaceship.description%></p>
     </div>
     <h2 class="spaceship-show-card-trip-pricing">Just for <%=@spaceship.price%> SpaceCredits</h2>

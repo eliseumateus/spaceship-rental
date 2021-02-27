@@ -42,6 +42,3 @@ yarn-debug.log*
 .DS_Store
 Gemfile.lock*
 Gemfile.lock
-.env*
-.env*
-.env*
